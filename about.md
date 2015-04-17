@@ -4,12 +4,16 @@ title: About
 permalink: /about/
 ---
 
-Some information about you!
+I am a software engineer working in Melbourne, Australia.
 
 ### More Information
 
-A place to include any other types of information that you'd like to include about yourself.
+I am passionate about writing good quality software. I always trying to get better at software design and architecture and algorithms.
+
+Things that I want to dabble in but haven't been able to
+* machine learning
+* learning about statistics
 
 ### Contact me
 
-[email@domain.com](mailto:email@domain.com)
+[ransingh57@yahoo.com](mailto:ransingh57@yahoo.com).
