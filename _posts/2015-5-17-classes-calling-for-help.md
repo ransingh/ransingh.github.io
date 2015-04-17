@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Hidden classes calling for help
+tags: duck_type
 ---
 
 Recently, I learned that in past I have used
@@ -23,7 +24,7 @@ Recently, I learned that in past I have used
   Consider a FeedProcessor, which processes a feed and extracts different type of videos.
   In the following code, the FeedProcessor knows to much about the video extraction logic.
 
-  ```
+  {% highlight ruby %}
   class FeedProcessor
     def initialize(extractors)
       @extractor = extractors
@@ -60,10 +61,11 @@ Recently, I learned that in past I have used
       # pocket video extraction
     end
   end
-  ```
+  {% endhighlight %}
+
   Instead of branching on the type of video url, pass in the **video extractors**( _duck type_ ). A video extractor knows what url it understands, hence can go ahead and extract the video. That logic can be nicely encapsulated inside the appropriate extractor.
 
-  ```
+  {% highlight ruby %}
   class FeedProcessor
     def initialize(extractors)
       @extractor = extractors
@@ -105,7 +107,7 @@ Recently, I learned that in past I have used
     end
   end  
 
-  ```
+  {% endhighlight %}
 
   So whenever you see case statement to switch and execute methods with names following the pattern **extract_XXXXXX**, you know there is hidden duck type.
 
