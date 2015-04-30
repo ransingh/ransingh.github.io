@@ -9,10 +9,10 @@ So here it is.
 
 1. print
   * it can take multiple arguments and converts them to string by calling __to_s__ on the arguments passed to it. Then it writes to the stream.  
-  ![alt text]({{site.url}}/images/print_console.png "print method")
+  ![print method]({{site.url}}/images/print_console.png "print method")
 2. puts
   * operated just like __print__, but ensure that newline is appended whatever is written.  
-  ![alt text]({{site.url}}/images/puts_console.png "puts method")
+  ![puts method]({{site.url}}/images/puts_console.png "puts method")
 3. p
   * it writes to the stream just like __print__
   * it calls  __inspect__ on the objects passed to it, hence it is good for debugging.
@@ -27,18 +27,18 @@ So here it is.
       end
     end  
     ```
-     
+
     And you want to inspect the state of a person object.
 
     Instead of using "puts person " use "p person" if there is no to_s method defined.  
-    ![alt text]({{site.url}}/images/p_console.png "p method")
+    ![p method]({{site.url}}/images/p_console.png "p method")
 
     You can't call __p__ on the $stdout directly, as it is  private method. But Ruby Kernel exposes __p__, hence we can call it in irb session.
 
 4. syswrite
 
   * it can also write to the stream. But it does a __low level__ write. What does that mean that you may ask? It means that it writes directly to the underlying operating system buffers.  
-  ![alt text]("{{site.url}}/images/syswrite_console.png" "sysswrite")
+  ![sysswrite]({{site.url}}/images/syswrite_console.png "sysswrite")
 
 
 
