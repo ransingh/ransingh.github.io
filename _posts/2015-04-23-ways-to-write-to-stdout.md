@@ -18,7 +18,7 @@ So here it is.
   * it calls  __inspect__ on the objects passed to it, hence it is good for debugging.
     Let's say you have a Person class
 
-    ´´´  
+    ```ruby  
     class Person
       attr_accessor :name, :age, :address
 
@@ -26,7 +26,8 @@ So here it is.
         @name, @age, @address = name, age, address
       end
     end  
-    ´´´  
+    ```
+     
     And you want to inspect the state of a person object.
 
     Instead of using "puts person " use "p person" if there is no to_s method defined.  
